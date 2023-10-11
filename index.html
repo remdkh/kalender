@@ -31,19 +31,35 @@
 </div>
 
 <script>
-    //Persiapan JQuery
+   <script>
+    // Persiapan JQuery
     $(document).ready(function() {
         var calendar = $('#calendar').fullCalendar({
-            //izinkan tabel bisa di edit
+            // Izinkan tabel bisa di edit
             editable: true,
-            //atur header kalender
-            header:{
-                left : 'prev, next today',
-                center : 'title',
-                right : 'month, agendaWeek, agendaDay'
-            }
+            // Atur header kalender
+            header: {
+                left: 'prev, next today',
+                center: 'title',
+                right: 'month, agendaWeek, agendaDay'
+            },
+            events: [  // Daftar acara
+                {
+                    title: 'Acara 1',
+                    start: '2023-10-15',
+                    end: '2023-10-16'
+                },
+                {
+                    title: 'Acara 2',
+                    start: '2023-10-18',
+                    end: '2023-10-20'
+                },
+                // Tambahkan acara lain sesuai kebutuhan
+            ]
         });
     });
+</script>
+
 </script>
 
 
