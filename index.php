@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule POLYMESA</title>
+    <!--
+        yang dibutuhkan :
+        1. library Fullcalendar
+        2. Boostrap 4
+        3. Jquery
+        4. Jquery UI
+        5. Momen js
+    -->
+    <link rel="stylesheet" href="assets/fullcalendar.css" />
+    <link rel="stylesheet" href="assets/bootstrap.css" /> 
+
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/jquery-ui.min.js"></script>
+    <script src="assets/moment.min.js"></script>
+    <script src="assets/fullcalendar.min.js"></script>
+</head>
+
+<body>
+<br> 
+<h2 class="text-center"><a href="#">Schedule POLYMESA</a></h2>
+ <br>
+ <div class="container">
+    <div id="calendar"></div>
+</div>
+
+<script>
+    //Persiapan JQuery
+    $(document).ready(function() {
+        var calendar = $('#calendar').fullCalendar({
+            //izinkan tabel bisa di edit
+            editable: true,
+            //atur header kalender
+            header:{
+                left : 'prev, next today',
+                center : 'title',
+                right : 'month, agendaWeek, agendaDay'
+            }
+        });
+    });
+</script>
+
+
+
+</body>
+
+</html>
